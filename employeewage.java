@@ -1,10 +1,15 @@
 public class emp {
-    public static void main(String[] args) {
-            int rand = (int) (Math.random() * 10 / 2);
-            if (rand > 0)
-                System.out.println("Employee is present");
-            else
-                System.out.println("Employee is absent");
-    }
+    public static void main(String[] arg){
+    	Scanner sc = new Scanner(System.in);
+        int total;
+
+        System.out.println("Enter wage per hour: ");
+        int full = sc.nextInt();
+        System.out.println("Enter total hour of work: ");
+        int wage = sc.nextInt();
+
+        total = full * wage;
+        System.out.println("Total wage is: "+total);
+	}
 
 }
