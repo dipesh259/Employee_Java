@@ -1,15 +1,19 @@
-public class emp {
-    public static void main(String[] arg){
-    	Scanner sc = new Scanner(System.in);
-        int total;
+package learned;
 
+import java.util.Scanner;
+
+public class partime {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int p;
+
+        //Input data
         System.out.println("Enter wage per hour: ");
-        int full = sc.nextInt();
-        System.out.println("Enter total hour of work: ");
-        int wage = sc.nextInt();
+        int w = sc.nextInt();
+        System.out.println("Enter total hour of part-time work: ");
+        int h = sc.nextInt();
 
-        total = full * wage;
-        System.out.println("Total wage is: "+total);
-	}
-
+        p = w * h;
+        System.out.println("Part-time wage is: "+p);
+    }
 }
